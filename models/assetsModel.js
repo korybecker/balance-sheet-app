@@ -15,4 +15,4 @@ const assetsSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.Model('Assets', assetsSchema);
+module.exports = mongoose.model('Assets', assetsSchema);
