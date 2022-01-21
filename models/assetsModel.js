@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const assetsSchema = new mongoose.Schema({
+  category: {
+    type: String,
+    required: true,
+  },
   dollarAmount: {
     type: String,
     required: [true, "Dollar amount must be provided"],
@@ -15,4 +19,4 @@ const assetsSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Assets', assetsSchema);
+module.exports = mongoose.model("Assets", assetsSchema);
